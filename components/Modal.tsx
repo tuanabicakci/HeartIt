@@ -57,7 +57,7 @@ const Modal: React.FC<ModalProps> = ({
                 {/*Header*/}
                 <div className={'flex items-center justify-between p-10 rounded-t'}>
                   <h3 className={'text-3xl font-semibold text-white'}>{title}</h3>
-                  <button className={'p-1 ml-auto border-o text-white hover:opacity-70 transition'}><AiOutlineClose size={20}/></button>
+                  <button onClick={handleClose} className={'p-1 ml-auto border-o text-white hover:opacity-70 transition'}><AiOutlineClose size={20}/></button>
                 </div>
                 {/*Body*/}
                 <div className={'relative p-10 flex-auto'}>
